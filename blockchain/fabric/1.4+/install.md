@@ -95,6 +95,11 @@ make: *** [release/linux-amd64/bin/configtxgen] 错误 2
 
 `sudo ./byfn.sh up`
 
+
+## 其他部署参考
+
+`https://hyperledger-fabric.readthedocs.io/en/release-1.4/build_network.html`
+
 ## 问题
 
 1. Error: error getting endorser client for channel: endorser client failed to connect to peer0.org1.example.com:7051: failed to create new connection: context deadline exceeded peer0.org1 failed to join the channel, Retry after 3 seconds
@@ -103,5 +108,6 @@ make: *** [release/linux-amd64/bin/configtxgen] 错误 2
 
 
 ```
-
+vi /etc/resolv.conf
+# options edns0
 ```

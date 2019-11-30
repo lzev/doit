@@ -24,6 +24,9 @@ sudo apt install g++-6
 sudo ln -s gcc-6 gcc
 
 sudo ln -s g++-6 g++
+
+yum install gcc
+yum install gcc-c++
 ```
 
 - 设置环境变量
@@ -43,6 +46,9 @@ sudo apt-get update
 sudo apt-get install postgresql
 sudo systemctl start postgresql
 sudo -u postgres psql
+
+CREATE USER dbuser WITH PASSWORD '*****' // 创建用户
+GRANT ALL PRIVILEGES ON DATABASE exampledb TO dbuser; // 授权
 
 ALTER USER postgres WITH PASSWORD 'passowrd';
 psql postgres://hppoc:password@127.0.0.1:5432/fabricexplorer
