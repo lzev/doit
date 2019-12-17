@@ -18,3 +18,11 @@ http {
   client_max_body_size 20M;
 }
 ```
+
+3. nginx支持下载apk文件
+
+```
+在conf/mime.types中加入
+
+application/vnd.android.package-archive  apk;
+```
