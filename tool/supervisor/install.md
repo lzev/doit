@@ -45,6 +45,13 @@ supervisorctl reload(最好不要使用，建议进入supervisorctl后执行upda
 supervisorctl update
 ```
 
+## supervisor管理程序---配置程序的工作路径
+
+```
+supervisord里支持environment参数，所以可以在你的进程配置下面增加以下参数：
+environment=PWD=/data/server/  #通过系统宏观变量PWD来改变工作路径，剑走偏锋。
+```
+
 ## 错误
 
 1. Error: Another program is already listening on a port that one of our HTTP servers is configured to use. Shut this program down first before starting supervisord.

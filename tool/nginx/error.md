@@ -26,3 +26,12 @@ http {
 
 application/vnd.android.package-archive  apk;
 ```
+
+4. 414 Request-URI Too Large
+```
+
+解决办法：
+
+client_header_buffer_size 512k;
+large_client_header_buffers 4 512k;
+```
